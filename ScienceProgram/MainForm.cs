@@ -23,6 +23,7 @@ namespace ScienceProgram
 
         public async void OpenListScientist()
         {
+            listDataGridView.DataSource = null;
             SQLiteCommand copy = new SQLiteCommand(@"SELECT * FROM Scientist", DB);
             copy.ExecuteNonQuery();
             SQLiteDataReader reader = copy.ExecuteReader();
@@ -38,6 +39,7 @@ namespace ScienceProgram
 
         private void listConferenceBtn_Click(object sender, EventArgs e)
         {
+            listDataGridView.DataSource = null;
             SQLiteCommand copy = new SQLiteCommand(@"SELECT * FROM Conference", DB);
             copy.ExecuteNonQuery();
             SQLiteDataReader reader = copy.ExecuteReader();
@@ -48,6 +50,7 @@ namespace ScienceProgram
 
         private void listParticipationBtn_Click(object sender, EventArgs e)
         {
+            listDataGridView.DataSource = null;
             SQLiteCommand copy = new SQLiteCommand(@"SELECT * FROM Participation", DB);
             copy.ExecuteNonQuery();
             SQLiteDataReader reader = copy.ExecuteReader();
