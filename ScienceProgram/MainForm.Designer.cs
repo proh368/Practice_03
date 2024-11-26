@@ -34,6 +34,11 @@
             this.listParticipationBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.listDataGridView = new System.Windows.Forms.DataGridView();
+            this.logoutBtn = new System.Windows.Forms.Button();
+            this.zapros1Btn = new System.Windows.Forms.Button();
+            this.zapros2Btn = new System.Windows.Forms.Button();
+            this.zapros3Btn = new System.Windows.Forms.Button();
+            this.zapros4Btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.listDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,7 +46,7 @@
             // 
             this.welcomeLbl.AutoSize = true;
             this.welcomeLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.welcomeLbl.Location = new System.Drawing.Point(163, 9);
+            this.welcomeLbl.Location = new System.Drawing.Point(145, 9);
             this.welcomeLbl.Name = "welcomeLbl";
             this.welcomeLbl.Size = new System.Drawing.Size(481, 55);
             this.welcomeLbl.TabIndex = 0;
@@ -98,12 +103,72 @@
             this.listDataGridView.Size = new System.Drawing.Size(756, 308);
             this.listDataGridView.TabIndex = 5;
             // 
+            // logoutBtn
+            // 
+            this.logoutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logoutBtn.Location = new System.Drawing.Point(12, 12);
+            this.logoutBtn.Name = "logoutBtn";
+            this.logoutBtn.Size = new System.Drawing.Size(105, 44);
+            this.logoutBtn.TabIndex = 6;
+            this.logoutBtn.Text = "Выйти";
+            this.logoutBtn.UseVisualStyleBackColor = true;
+            this.logoutBtn.Click += new System.EventHandler(this.logoutBtn_Click);
+            // 
+            // zapros1Btn
+            // 
+            this.zapros1Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.zapros1Btn.Location = new System.Drawing.Point(632, 12);
+            this.zapros1Btn.Name = "zapros1Btn";
+            this.zapros1Btn.Size = new System.Drawing.Size(140, 52);
+            this.zapros1Btn.TabIndex = 7;
+            this.zapros1Btn.Text = "Ученые с публикацией 1999 года";
+            this.zapros1Btn.UseVisualStyleBackColor = true;
+            this.zapros1Btn.Click += new System.EventHandler(this.zapros1Btn_Click);
+            // 
+            // zapros2Btn
+            // 
+            this.zapros2Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.zapros2Btn.Location = new System.Drawing.Point(632, 70);
+            this.zapros2Btn.Name = "zapros2Btn";
+            this.zapros2Btn.Size = new System.Drawing.Size(140, 51);
+            this.zapros2Btn.TabIndex = 8;
+            this.zapros2Btn.Text = "Конференции, где не были опубликованы доклады";
+            this.zapros2Btn.UseVisualStyleBackColor = true;
+            this.zapros2Btn.Click += new System.EventHandler(this.zapros2Btn_Click);
+            // 
+            // zapros3Btn
+            // 
+            this.zapros3Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.zapros3Btn.Location = new System.Drawing.Point(632, 127);
+            this.zapros3Btn.Name = "zapros3Btn";
+            this.zapros3Btn.Size = new System.Drawing.Size(140, 51);
+            this.zapros3Btn.TabIndex = 9;
+            this.zapros3Btn.Text = "Конференция, где было больше всего докторов наук";
+            this.zapros3Btn.UseVisualStyleBackColor = true;
+            this.zapros3Btn.Click += new System.EventHandler(this.zapros3Btn_Click);
+            // 
+            // zapros4Btn
+            // 
+            this.zapros4Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.zapros4Btn.Location = new System.Drawing.Point(632, 184);
+            this.zapros4Btn.Name = "zapros4Btn";
+            this.zapros4Btn.Size = new System.Drawing.Size(140, 51);
+            this.zapros4Btn.TabIndex = 10;
+            this.zapros4Btn.Text = "Сколько различных стран было в каждой конференции";
+            this.zapros4Btn.UseVisualStyleBackColor = true;
+            this.zapros4Btn.Click += new System.EventHandler(this.zapros4Btn_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.zapros4Btn);
+            this.Controls.Add(this.zapros3Btn);
+            this.Controls.Add(this.zapros2Btn);
+            this.Controls.Add(this.zapros1Btn);
+            this.Controls.Add(this.logoutBtn);
             this.Controls.Add(this.listDataGridView);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listParticipationBtn);
@@ -129,5 +194,10 @@
         private System.Windows.Forms.Button listParticipationBtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView listDataGridView;
+        private System.Windows.Forms.Button logoutBtn;
+        private System.Windows.Forms.Button zapros1Btn;
+        private System.Windows.Forms.Button zapros2Btn;
+        private System.Windows.Forms.Button zapros3Btn;
+        private System.Windows.Forms.Button zapros4Btn;
     }
 }
